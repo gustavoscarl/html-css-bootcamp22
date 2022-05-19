@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Inputs</title>
+</head>
+<body>
+    <h1>More about Inputs</h1>
+
+    <h2>Checkbox Input.</h2>
+    <form action="/searchform">
+    <input type="checkbox" name="agree" id="agree_tos">
+    <label for="agree_tos">I agree for everything.</label>
+    <button>Submit</button></form>
+
+    <h2>Radio Input</h2>
+       <form action="mcdonalds_bigmac">
+           <div>
+               <input type="radio" name="sizes" id="small" value="small">
+               <label for="small">Small</label>
+           </div>
+           <p>
+               <input type="radio" name="sizes" id="medium" value="medium">
+               <label for="medium">Medium</label>
+           </p>
+           <div>
+               <input type="radio" name="sizes" id="big" value="big">
+               <label for="big">Big</label>
+           </div>
+           <div>
+               <button>Order it!</button>
+            </div>
+       </form>
+    <h2>Select</h2>
+                <!--Select and Option-->
+       <form action="kitchen">
+            <select name="Entree" id="entree">
+                <option value="veg">Vegetarian</option>
+                <option value="fish">Salmon</option>
+                <option value="steak">Angus Steak</option>
+            </select>
+            <label for="entree">Select your Entree</label>
+        <div>
+                <!--Range-->
+                <label for="cheese">Select the amount of Cheese</label>
+                <div><input type="range" name="cheese_amount" id="cheese" min="0" max="100" value="0" step="5"></div>
+                <!-- Text Area-->
+                <textarea name="observ" id="obs" cols="30" rows="5" placeholder="Type your observation or request here."></textarea>
+                    
+        </div>
+            <div><button>Submit</button></div>
+       </form>
+
+</body>
+</html>
